@@ -17,6 +17,9 @@ namespace WebApplication1_Test.Controllers
         {
             ViewBag.Message = "Your application description page.";
 
+            ViewBag.testMessage = "I am being tested";
+
+
             return View();
         }
 
