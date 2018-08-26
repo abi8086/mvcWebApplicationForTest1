@@ -19,7 +19,7 @@ namespace WebApplication1_Test.Tests.Controllers
             ViewResult result = controller.About() as ViewResult;
 
             // Assert
-            Assert.AreEqual("i am being", result.ViewBag.testMessage);
+            Assert.AreEqual("I am being tested", result.ViewBag.testMessage);
 
         }
     }
