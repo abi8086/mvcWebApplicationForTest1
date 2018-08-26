@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -19,6 +20,7 @@ namespace WebApplication1_Test.Controllers
 
             ViewBag.testMessage = "I am being tested";
 
+            ViewBag.connString = ConfigurationManager.ConnectionStrings["DefaultDevConn"].ConnectionString;
 
             return View();
         }
