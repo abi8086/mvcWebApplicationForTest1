@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WebApplication1_Test.Controllers;
 
 
-namespace WebApplication1_Test.Tests.Controllers
+namespace WebApplication1_Test_2.Controllers
 {
     [TestClass]
     public class UnitTest1
@@ -24,3 +24,5 @@ namespace WebApplication1_Test.Tests.Controllers
         }
     }
 }
+
+
