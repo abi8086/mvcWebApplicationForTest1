@@ -12,6 +12,7 @@ namespace WebApplication1_Test.Tests.Controllers
     [TestClass]
     public class HomeControllerTest
     {
+        [TestCategory("CategoryA")]
         [TestMethod]
         public void Index()
         {
@@ -25,6 +26,7 @@ namespace WebApplication1_Test.Tests.Controllers
             Assert.IsNotNull(result);
         }
 
+        [TestCategory("CategoryA")]
         [TestMethod]
         public void About()
         {
@@ -38,6 +40,7 @@ namespace WebApplication1_Test.Tests.Controllers
             Assert.AreEqual("Your application description page.", result.ViewBag.Message);
         }
 
+        [TestCategory("CategoryA")]
         [TestMethod]
         public void Contact()
         {
