@@ -192,12 +192,12 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <None Include="Web.Production.config">
+    <Content Include="Web.Production.config">
       <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web.QA.config">
+    </Content>
+    <Content Include="Web.QA.config">
       <DependentUpon>Web.config</DependentUpon>
-    </None>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
