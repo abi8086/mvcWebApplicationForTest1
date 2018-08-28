@@ -20,7 +20,14 @@ namespace WebApplication1_Test.Controllers
 
             ViewBag.testMessage = "I am being tested";
 
-            ViewBag.connString = ConfigurationManager.ConnectionStrings["DefaultDevConn"].ConnectionString;
+            string xyz = ConfigurationManager.ConnectionStrings["DefaultDevConn"].ConnectionString;
+
+            xyz = xyz.Substring(12, 21);
+            xyz = xyz.Replace("v;", "");
+
+            xyz = "Web.Config Transform At: " + xyz;
+
+            ViewBag.connString = xyz;
 
             return View();
         }
