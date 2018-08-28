@@ -22,7 +22,7 @@ namespace WebApplication1_Test.Controllers
 
             string xyz = ConfigurationManager.ConnectionStrings["DefaultDevConn"].ConnectionString;
 
-            xyz = xyz.Substring(12, 21);
+            xyz = xyz.Substring(xyz.IndexOf('=')+1, xyz.IndexOf(';')-1);
             xyz = xyz.Replace("v;", "");
 
             xyz = "Web.Config Transform At: " + xyz;
